@@ -2,7 +2,6 @@ package com.bridgelabz;
 public class LinkedList<E> {
     Node<E> head;
     Node<E> tail;
-
     public void push(E key) {
         Node<E> newNode = new Node<>(key);
         if(head == null) {
@@ -43,6 +42,20 @@ public class LinkedList<E> {
     public E pop(){
         E popData = head.getKey();
         head = head.getNext();
+        return popData;
+    }
+
+    public E popLast(){
+        E popData = tail.getKey();
+        Node<E> temp = head;
+        if(head == tail){
+            head = null;
+        }
+        while (temp.getNext() != tail){
+            temp = temp.getNext();
+        }
+        temp.setNext(null);
+        tail = temp;
         return popData;
     }
 }
