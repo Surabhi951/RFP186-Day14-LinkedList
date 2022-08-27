@@ -33,5 +33,4 @@ public class LinkedList<E> {
         }
         System.out.println();
     }
-
 }
