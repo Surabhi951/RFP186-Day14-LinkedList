@@ -18,7 +18,5 @@ public class LinkedListMain {
         System.out.println();
         System.out.println(linkedList2.popLast());
         linkedList2.print();
-
-
     }
 }
