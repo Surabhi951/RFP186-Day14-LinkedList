@@ -6,14 +6,15 @@ public class LinkedListMain {
 //        linkedList1.push(30);
         linkedList1.push(56);
         linkedList1.insert(30);
+        System.out.println(linkedList1.pop());
         linkedList1.print();
 
-/*        LinkedList<Integer> linkedList2 = new LinkedList<>();
+        LinkedList<Integer> linkedList2 = new LinkedList<>();
         linkedList2.add(56);
         linkedList2.add(30);
         linkedList2.add(70);
         linkedList2.print();
 
- */
+
     }
 }

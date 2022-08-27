@@ -39,4 +39,10 @@ public class LinkedList<E> {
         newNode.setNext(tail);
         head.setNext(newNode);
     }
+
+    public E pop(){
+        E popData = head.getKey();
+        head = head.getNext();
+        return popData;
+    }
 }
