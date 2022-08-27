@@ -1,5 +1,4 @@
 package com.bridgelabz;
-
 public class LinkedList<E> {
     Node<E> head;
     Node<E> tail;
@@ -16,6 +15,16 @@ public class LinkedList<E> {
         }
     }
 
+    public void add(E key) {
+        Node<E> newNode = new Node<>(key);
+        if (head == null) {
+            head = newNode;
+        } else {
+            tail.setNext(newNode);
+        }
+        tail = newNode;
+    }
+
     void print(){
         Node<E> temp = head;
         while(temp!=null){
@@ -24,4 +33,5 @@ public class LinkedList<E> {
         }
         System.out.println();
     }
+
 }
